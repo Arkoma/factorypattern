@@ -17,19 +17,19 @@ public class Pizza {
         return pizza;
     }
 
-    private void prepare() {
+    public void prepare() {
         System.out.println("preparing pizza");
     }
 
-    private void bake() {
+    public void bake() {
         System.out.println("Baking pizza!");
     }
 
-    private void cut() {
+    public void cut() {
         System.out.println("Cutting Pizza");
     }
 
-    private void box() {
+    public void box() {
         System.out.println("Boxing Pizza");
     }
 
