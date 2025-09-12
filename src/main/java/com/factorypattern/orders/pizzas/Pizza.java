@@ -5,7 +5,8 @@ public class Pizza {
         Pizza pizza = switch (type) {
             case "cheese" -> new CheesePizza();
             case "pepperoni" -> new PepperoniPizza();
-            case "greek" -> new GreekPizza();
+            case "clam" -> new ClamPizza();
+            case "veggie" -> new VeggiePizza();
             default -> new Pizza();
         };
 

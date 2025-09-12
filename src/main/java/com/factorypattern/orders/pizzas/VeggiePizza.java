@@ -1,4 +1,4 @@
 package com.factorypattern.orders.pizzas;
 
-public class GreekPizza extends Pizza {
+public class VeggiePizza extends Pizza {
 }
