@@ -1,13 +1,38 @@
 package com.factorypattern.orders.pizzas;
 
-public interface Pizza {
+import java.util.ArrayList;
+import java.util.List;
 
-    public void prepare();
+public abstract class Pizza {
 
-    public void bake();
+    String name;
+    String dough;
+    String sauce;
+    List<String> toppings = new ArrayList<>();
 
-    public void cut();
+    void prepare() {
+        System.out.println("Preparing " + name);
+        System.out.println("Tossing dough " + dough);
+        System.out.println("Adding sauce" + sauce);
+        System.out.println("Adding toppings...");
+        for (String topping : toppings) {
+            System.out.println("Adding " + topping);
+        }
+    }
 
-    public void box();
+    void bake() {
+        System.out.println("Baking for 25 minutes at 350");
+    }
 
+    void cut() {
+        System.out.println("Cutting the pizza into diagonal slices");
+    }
+
+    void box() {
+        System.out.println("Place pizza in official PizzaStore box");
+    }
+
+    public String getName() {
+        return name;
+    }
 }
